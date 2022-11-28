@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="company"><b>Fiktiv</b>Kunde</div>
+            <ul class="navbar-navigation">
+                <li><a href="#"><b>Forsiden</b></a></li>
+                <li><a href="#">Lejlighederne</a></li>
+                <li><a href="#">Området</a></li>
+                <li><a href="#">Nyhedsbrev</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="navbar-navigation-alternative"><img src="images/menu-icon.png"></div>
+        </nav>
+
+        <section id="header">
+            <div class="container">
+                <div>Unikke lejligheder centralt ved byens nye havnefront</div>
+                <div class="button"><a href="#">Læs om lejlighederne</a></div>
+            </div>
+        </section>
+
+        <section id="section1">
+            <div class="container">
+                <div>
+                    <div class="title"><b>Velkommen til<br>Fiktiv</b>Kunde</div>
+                    <div>En del af det skønne nye havneområde i Horsens.</div>
+                    <div>Vi har fornøjelsen af at udbyde i alt 70 nyopførte lejligheder med bedste beliggenhed lige ved vandkanten.</div>
+                </div>
+                <div class="image"></div>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="container">
+                <div class="title"><b>Lejligheder opført i moderne nordisk stil</b></div>
+                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="button"><a href="#">Se vores lejligheder <span id="arrow-icon">&#8250;</span></a></div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div class="title"><b>Her flytter du ind med <span>fordele</span></b></div>
+                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <script>
+            function initMap() { 
+                const location = { lat: 56.151072, lng: 10.215170 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: location,
+                });
+                const marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                });
+            }
+
+            window.initMap = initMap;
+        </script>
+
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZTvy-cZFcbP8rKfpK8__fP9tR7Q5WFok&callback=initMap">
+        </script>
+
+        <section id="section4">
+            <div class="container">
+                <div class="title"><b>Bo i et unikt område mellem <span>by og fjord</span></b></div>
+                <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="button"><a href="#">Se området <span id="arrow-icon">&#8250;</span></a></div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="container">
+                <div class="image"></div>
+                <div class="content">
+                    <div class="title"><b>Vil du vide mere om Fiktiv</b>Kunde<b>?</b></div>
+                    <div class="body">Har du spørgsmål, eller vil du opleve Honnørkajen ved selsyn? Vores boligkonsulenter fra Taurus Boligudlejning er klar til at hjælpe dig og vise dig rundt i dit nye hjem.</div>
+                    <div class="contacts">
+                        <div class="contactinfo">
+                            <div><img src="images/phone-icon.png"></div>
+                            <div>+45 98 98 98 98</div>
+                        </div>
+                        <div class="contactinfo" id="contactinfo2">
+                            <div><img src="images/mail-icon.png"></div>
+                            <div>fiktiv@kunde.dk</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer">
+            <div></div>
+            <div class="first-element">
+                <div class="title"><b>Fiktiv</b>Kunde</div>
+                <div>&copy; 2022 FiktivKunde<br>Powered by Bolig Boost | <a href="#">Privatlivspolitik</a></div>
+            </div>
+            <div class="remove-small-screens">
+                <div><b>Kontakt os</b></div>
+                <div>Tlf: +45 98 98 98 98</div>
+                <div>Email: fiktiv@kunde.dk</div>
+                <div>Aarhus 11<br>DK-8000 Aarhus C</div>
+            </div>
+            <div class="remove-small-screens">
+                <div><b>Find rundt</b></div>
+                <div><a href="#">Forsiden</a></div>
+                <div><a href="#">Lejlighederne</a></div>
+                <div><a href="#">Området</a></div>
+                <div><a href="#">Nyhedsbrev</a></div>
+                <div><a href="#">Kontakt</a></div>
+            </div>
+            <div>
+                <div><b>Om Fiktiv</b>Kunde</div>
+                <div>Vi specialiserer os inden for administration og service af investeringsejendomme samt boligudlejning.</div>
+                <div class="social-media">
+                    <div><a href="#"><img src="images/facebook.png"></a></div>
+                    <div><a href="#"><img src="images/instagram.png"></a></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </body>
+</html>
